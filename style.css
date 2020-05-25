@@ -1,5 +1,3 @@
-
-
 header {
     display: flex;
     background: linear-gradient(#081375, #081300);
@@ -26,7 +24,7 @@ body .content{
 /*WIDOKI*/
 .acticles {
     display: flex;
-    flex: 0 0 85%;
+    flex-basis: 85%;
 }
 
 article {
@@ -55,7 +53,7 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: #8C037C;
-    flex: 1 0 15%;
+    flex-grow: 1;
 }
 
 /*TABLEKA*/
@@ -92,6 +90,16 @@ input:invalid {
   }
 
 
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 
 
 
