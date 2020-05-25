@@ -1,12 +1,12 @@
 header {
     display: flex;
-    background: linear-gradient(#081375, #081300);
+    background: linear-gradient(#6303FA, #081300);
     color: lightgrey;
     font-size: 2em;
 }
 
 footer {
-    background-color: #85380D;
+    background-color: #6303FA;
     font-size: 1em;
 }
 
@@ -17,12 +17,8 @@ body {
     font-size: 1em;
 }
 
-body .content{
-    flex: 1 1 auto;
-}
-
 /*WIDOKI*/
-.acticles {
+.articles {
     display: flex;
     flex-basis: 85%;
 }
@@ -43,81 +39,145 @@ article:target {
     flex-wrap: wrap;
 }
 
-.empty {
-    display: flex;
-    flex: 0 0 85%;
-}
 
 /*MENU*/
 nav {
     display: flex;
     flex-direction: column;
-    background-color: #8C037C;
+    background-color: #03AAFA;
     flex-grow: 1;
 }
 
 /*TABLEKA*/
 table {
-    border-collapse: collapse;
     width: 100%;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+   
 }
+
 th {
-    background-color: pink;
-    color: red;
+    background-color: #1C02DE;
+    color: lightgrey; 
+}
+
+tr{
+    margin: 0;
+    padding: 0;
 }
 
 th input{
-    background-color: pink;
+    background-color: #1C02DE;
+    color: lightgrey;   
+    width: 100%;
 }
 
-tr:nth-child(even) {
-    background: #038C6B
+tr:nth-child(even){
+    background: #03AAFA
 }
-tr:nth-child(odd) {
-    background: #4A8203
+
+tr:nth-child(even) td input:not([type=submit]){
+    background: #03AAFA
+}
+
+tr:nth-child(even) td select{
+    background: #03AAFA
+}
+
+tr:nth-child(odd){
+    background: #0E30F5
+}
+
+tr:nth-child(odd) td input:not([type=submit]){
+    background: #0E30F5
+}
+
+tr:nth-child(odd) td select{
+    background: #0E30F5
 }
 
 tr:hover{
-    background-color: #03AAFA;
+    background-color: #1C02DE;
 }
 
-tr:hover td input{
-    background-color: #03AAFA;
+tr:hover td input:not([type=submit]){
+    background-color: #1C02DE;
+}
+
+tr:hover td select{
+    background-color: #1C02DE;
 }
 
 input:invalid {
     background-color: tomato;
   }
 
-
-
-input[type=button], input[type=submit], input[type=reset] {
-    background-color: #4CAF50;
+input {
+    color: lightgrey; 
     border: none;
-    color: white;
-    padding: 16px 32px;
+}
+
+select{
+    color: lightgrey; 
+    border: none;
+}
+
+tr input:not([type=submit]){
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+tr select{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+td {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+.fakeButton {
+    background-color: #6303FA;
+    border: none;
+    color: lightgray;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
 }
 
-
+input[type=submit]{
+    background-color: #6303FA;
+    border: none;
+    color: lightgray;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 
 /*LINKI*/
-a {    
+a:not(.fakeButton) {    
     color: lightgrey;
     text-decoration: none;
 }
 
-a:hover{
+a:hover:not(.fakeButton){
     text-decoration: underline;
 }
 
-/* justify-content - w poziomie
-/* align-items - w pionie
-/* flex-direction: column
 
-/* flex-flow: column wrap
+
+/*PRINT*/
+@media print {
+    *{
+        color: black;
+        background-color: white; 
+    }
+}
 
 /*colors
     #6303FA
