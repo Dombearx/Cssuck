@@ -1,0 +1,120 @@
+
+
+header {
+    display: flex;
+    background: linear-gradient(#081375, #081300);
+    color: lightgrey;
+    font-size: 2em;
+}
+
+footer {
+    background-color: #85380D;
+    font-size: 1em;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+}
+
+body .content{
+    flex: 1 1 auto;
+}
+
+/*WIDOKI*/
+.acticles {
+    display: flex;
+    flex: 0 0 85%;
+}
+
+article {
+    display: none;
+    flex-direction: column;
+    flex: auto;
+}
+
+article:target {
+    display: flex;
+}
+
+.maincontent {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.empty {
+    display: flex;
+    flex: 0 0 85%;
+}
+
+/*MENU*/
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #8C037C;
+    flex: 1 0 15%;
+}
+
+/*TABLEKA*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    background-color: pink;
+    color: red;
+}
+
+th input{
+    background-color: pink;
+}
+
+tr:nth-child(even) {
+    background: #038C6B
+}
+tr:nth-child(odd) {
+    background: #4A8203
+}
+
+tr:hover{
+    background-color: #03AAFA;
+}
+
+tr:hover td input{
+    background-color: #03AAFA;
+}
+
+input:invalid {
+    background-color: tomato;
+  }
+
+
+
+
+
+/*LINKI*/
+a {    
+    color: lightgrey;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* justify-content - w poziomie
+/* align-items - w pionie
+/* flex-direction: column
+
+/* flex-flow: column wrap
+
+/*colors
+    #6303FA
+    #1C02DE
+    #0E30F5
+    #025DDE
+    #03AAFA
+/*
